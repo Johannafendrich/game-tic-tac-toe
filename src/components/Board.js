@@ -31,7 +31,7 @@ export default function Board() {
   const [squares, setSquares] = React.useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = React.useState(true);
 
-  const player = xIsNext ? "❌" : "🟢";
+  const player = xIsNext ? "🤞" : "👌🏼";
   const winner = calculateWinner(squares);
   const status = winner ? `Winner is ${winner}` : `Next player: ${player}`;
 

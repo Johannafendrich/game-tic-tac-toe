@@ -47,6 +47,9 @@ export default function Board() {
     setXIsNext(!xIsNext);
     setSquares(squaresCopy);
   }
+  function reset() {
+    setSquares(Array(9).fill(null));
+  }
 
   return (
     <div>
@@ -66,6 +69,9 @@ export default function Board() {
         <Square value={squares[7]} onClick={() => handleClick(7)} />
         <Square value={squares[8]} onClick={() => handleClick(8)} />
       </div>
+      <button className="reset-button" onClick={() => reset()}>
+        Reset
+      </button>
     </div>
   );
 }

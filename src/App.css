@@ -1,4 +1,6 @@
 .App {
+  display: flex;
+  justify-content: center;
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
@@ -52,4 +54,14 @@ ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.reset-button {
+  height: 20px;
+  justify-content: center;
+  text-align: center;
+  background: #333a47;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 20px;
 }
